@@ -1,0 +1,22 @@
+<view>
+    <swiper class="date-choose-swiper" circular="true" indicator-dots="{{false}}" current="{{swiperCurrent}}" bindchange="dateSwiperChange">
+        <block wx:for="{{dateList}}" wx:for-item="date" wx:key="key">
+            <swiper-item class="swiper-item">
+                <view class="day-tab">
+                    <view class="day-box {{dateCurrentStr == day.time?'active':''}}"
+                          data-time="{{day.time}}"
+                          bindtap="chooseDate"
+                          wx:for="{{date.days}}"
+                          wx:for-item="day"
+                          wx:key="key">
+                        <view class="day">
+                            {{day.id}}
+                        </view>
+                        <view class="week">{{day.week}}</view>
+                    </view>
+                </view>
+
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

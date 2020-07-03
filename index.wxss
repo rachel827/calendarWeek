@@ -1,0 +1,36 @@
+
+.date-choose-swiper {
+ flex-grow: 1;
+ height: 182rpx;
+}
+.swiper-item {
+ display: flex;
+ flex-direction: column;
+}
+.day-tab {
+  flex: 1;
+  -webkit-flex: 1;
+  text-align: center;
+  font-size: 26rpx;
+}
+.day-tab .day-box {
+  display: inline-block;
+  width: 100rpx;
+  height: 80rpx;
+  padding: 10rpx 0;
+  line-height: 40rpx;
+}
+.day-tab .day-box .day {
+  color: #414c58;
+}
+.day-tab .day-box .week {
+  color: #1f262e;
+}
+.day-tab .day-box.active {
+  background-color: #52D681;
+  border-radius: 12rpx;
+}
+.day-tab .day-box.active .day,
+.day-tab .day-box.active .week {
+  color: #fff;
+}
